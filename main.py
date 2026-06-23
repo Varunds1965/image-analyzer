@@ -42,7 +42,7 @@ def main():
     uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
     if uploaded_file is not None:
         image = st.image(
-            uploaded_file, caption = "uploaded image", use_container_width=True
+        uploaded_file, caption="uploaded image", width=500
         )
         btn = st.button("Classify Image")
         if btn:
